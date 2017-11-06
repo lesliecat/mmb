@@ -1,0 +1,130 @@
+.nav {
+  border-top: 10px solid #F1F1F1;
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  overflow: scroll;
+}
+.nav ul li {
+  font-size: 14px;
+  width: 25%;
+  height: 80px;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+}
+.nav ul img {
+  width: 50px;
+  height: 50px;
+}
+.discont {
+  width: 100%;
+  height: 35px;
+  background-color: #FF841D;
+  position: relative;
+}
+.discont span {
+  color: #fff;
+  font-size: 20px;
+  line-height: 35px;
+  height: 35px;
+}
+.discont img {
+  float: right;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
+.product {
+  background-color: #F1F1F1;
+  width: 100%;
+}
+.product ul {
+  width: 70%;
+  margin: 0 auto ;
+  background-color: #fff;
+}
+.product ul li {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: 128px;
+  position: relative;
+}
+.product ul li div.pic {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+}
+.product ul li div.pic img {
+  width: 100px;
+  height: 100px;
+}
+.product ul li div.desc {
+  width: 100%;
+  height: 100px;
+  margin-top: 14px;
+  padding-left: 114px;
+}
+.product ul li div.desc h4 {
+  margin-top: 10px;
+  height: 50px;
+}
+.product ul li div.desc i {
+  padding-right: 20px;
+  position: relative;
+}
+.product ul li div.desc i:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #f00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, 50%);
+}
+.product .more {
+  height: 50px;
+  position: relative;
+}
+.product .more a {
+  position: absolute;
+  left: 5%;
+  top: 9px;
+  height: 32px;
+  width: 90%;
+  border: 2px solid #F1F1F1;
+  text-align: center;
+  border-radius: 5px;
+}
+.pinpai {
+  width: 100%;
+  height: 35px;
+  background-color: #FF841D;
+  color: #fff;
+  line-height: 35px;
+  padding-left: 10px;
+}
+.footer {
+  width: 100%;
+  height: 62px;
+  font-size: 12px;
+  color: #666;
+}
+.footer p {
+  text-align: center;
+}
+.footer a {
+  display: inline-block;
+  font-size: 14px;
+}
+.footer .mobiledown {
+  color: #ff2020;
+}

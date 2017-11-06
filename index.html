@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="header">
+	<div class="logo fl">
+		<a href=""><img src="images/header_logo.png" alt=""></a>
+	</div>
+	<div class="down fr"><img src="images/header_app.png" alt=""></div>
+</div>
+
+<div class="search">
+	<div ><input type="text" class="insearch" placeholder="请输入你想比价的商品"></div>
+	<input type="button" class="fr" value="搜索">
+	
+</div>
+
+<div class="nav">
+	<ul class="clearfix">
+
+		<li >
+			<a href=""><img src="images/ic_search.png" alt=""></a>
+			<p>比价搜索</p>
+		</li>
+		<!--挖个坑-->
+
+	</ul>
+</div>
+
+<div class="discont">
+	<span>超值折扣推荐</span>
+	<img src=""  alt="">
+
+</div>
+
+<div class="product ">
+	<ul>
+		<a href="">
+			<li>
+				<div class="pic fl"><img src="images/a1.jpg" alt=""></div>
+				<div class="desc fr">
+					<h4>移动端凑单品：海天 鲜味 生抽 1.28L</h4>
+					<span>京东商城</span>
+					<i class="fr">1</i>
+				</div>
+			</li>
+		</a>
+		<a href="">
+			<li>
+				<div class="pic fl"><img src="images/a1.jpg" alt=""></div>
+				<div class="desc fr">
+					<h4>移动端凑单品：海天 鲜味 生抽 1.28L</h4>
+					<span>京东商城</span>
+					<i class="fr">1</i>
+				</div>
+			</li>
+		</a>
+		<a href="">
+			<li>
+				<div class="pic fl"><img src="images/a1.jpg" alt=""></div>
+				<div class="desc fr">
+					<h4>移动端凑单品：海天 鲜味 生抽 1.28L</h4>
+					<span>京东商城</span>
+					<i class="fr">1</i>
+				</div>
+			</li>
+		</a>
+		<a href="">
+			<li>
+				<div class="pic fl"><img src="images/a1.jpg" alt=""></div>
+				<div class="desc fr">
+					<h4>移动端凑单品：海天 鲜味 生抽 1.28L</h4>
+					<span>京东商城</span>
+					<i class="fr">1</i>
+				</div>
+			</li>
+		</a>
+		<a href="">
+			<li>
+				<div class="pic fl"><img src="images/a1.jpg" alt=""></div>
+				<div class="desc fr">
+					<h4>移动端凑单品：海天 鲜味 生抽 1.28L</h4>
+					<span>京东商城</span>
+					<i class="fr">1</i>
+				</div>
+			</li>
+		</a>
+
+		<li class="more clearfix">
+			<a href="">更多优惠信息>></a>
+		</li>
+
+	</ul>
+
+	</div>
+</div>
+
+
+<div class="pinpai">
+	<h4>品牌排行</h4>
+	<img src="" alt="">
+</div>
+
+<div class="login ">
+	<a href="">登录</a>
+	<a href="">注册</a>
+	<a href="">返回顶部</a>
+</div>
+
+<div class="footer">
+	<p>
+		<a href="" class="mobiledown">手机app下载</a>
+		<a href="">慢慢买手机版</a>--掌上比价平台
+	</p>
+	<p>m.manmanbuy.com</p>
+</div>
+
+<script type=text/html id="tpl">
+		{{each result v i}}
+
+		<li >
+			<a href="">{{#v.img}}</a>
+			<p>{{v.name}}</p>
+		</li>
+
+		{{/each}}
+
+</script>
+
+<script type=text/html id="tpl2">
+
+	{{each result v i }}
+	<a href="">
+		<li>
+			<div class="pic fl">{{#v.productImg2}}</div>
+			<div class="desc fr">
+				<h4>{{v.productName}}</h4>
+				<span>{{v.productFrom}}</span>
+				<i class="fr">{{v.productComCount}}</i>
+			</div>
+		</li>
+	</a>
+
+	{{/each}}
+</script>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

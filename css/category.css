@@ -1,0 +1,121 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+.hide {
+  display: none;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #FF841D;
+  position: relative;
+}
+.header .logo {
+  width: 185.5px;
+  height: 25px;
+  position: absolute;
+  left: 20px;
+  top: 12.5px;
+}
+.header .logo img {
+  width: 185.5px;
+  height: 25px;
+}
+.header .down {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  right: 20px;
+  top: 8px;
+}
+.header .down img {
+  width: 34px;
+  height: 34px;
+}
+.search {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.search div {
+  width: 100%;
+  padding-right: 120px;
+}
+.search div .insearch {
+  width: 100%;
+  height: 35px;
+  margin-left: 20px;
+  margin-right: 100px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding-left: 20px;
+}
+.search input[type="button"] {
+  background-color: #FF841D;
+  width: 63px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.login {
+  width: 100%;
+  height: 35px;
+  margin-top: 20px;
+}
+.login a {
+  height: 34px;
+  float: left;
+  width: 33.33%;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 34px;
+  background-color: #F1F1F1;
+}
+.footer {
+  width: 100%;
+  height: 62px;
+  font-size: 12px;
+  color: #666;
+}
+.footer p {
+  text-align: center;
+}
+.footer a {
+  display: inline-block;
+  font-size: 14px;
+}
+.footer .mobiledown {
+  color: #ff2020;
+}
+dt {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #F1F1F1;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+dd {
+  display: none;
+}
+dd li {
+  width: 33.33%;
+  height: 40px;
+  border: 1px solid #ccc;
+  float: left;
+}
+dd:after {
+  content: "";
+  display: block;
+  clear: both;
+}

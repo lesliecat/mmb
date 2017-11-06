@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Title</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+<div class="header">
+  <div class="logo fl">
+    <a href=""><img src="images/header_logo.png" alt=""></a>
+  </div>
+  <div class="down fr"><img src="images/header_app.png" alt=""></div>
+</div>
+<div class="search">
+  <div ><input type="text" class="insearch" placeholder="请输入你想比价的商品"></div>
+  <input type="button" class="fr" value="搜索">
+
+</div>
+
+<div class="category">
+  <ol>
+    <dt>大家电</dt>
+     <dd></dd>
+  </ol>
+
+</div>
+
+
+<div class="login ">
+  <a href="">登录</a>
+  <a href="">注册</a>
+  <a href="">返回顶部</a>
+</div>
+
+
+<div class="footer">
+  <p>
+    <a href="" class="mobiledown">手机app下载</a>
+    <a href="">慢慢买手机版</a>--掌上比价平台
+  </p>
+  <p>m.manmanbuy.com</p>
+</div>
+
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <dt>{{v.title}}</dt>
+  <dd id="tog"></dd>
+  {{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+  {{each result v i}}
+    <li>{{v.category}}</li>
+  {{/each}}
+</script>
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>
